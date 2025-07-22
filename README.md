@@ -1,7 +1,7 @@
 # GWAE-Fluvial
 
 ## training.ipynb 
-notebook demonstrates the training process of a Graph-based Wasserstein Autoencoder (GWAE) for generating geological models under uncertainty. The GWAE is a graph-based variational autoencoder architecture designed to handle different geological scenarios (e.g., models with varying numbers of channels) by learning a low-dimensional latent space representation
+The notebook demonstrates the training process of a Graph-based Wasserstein Autoencoder (GWAE) for generating geological models under uncertainty. The GWAE is a graph-based variational autoencoder architecture designed to handle different geological scenarios (e.g., models with varying numbers of channels) by learning a low-dimensional latent space representation
 researchgate.net. Unlike traditional grid-based approaches, this model uses graph convolutional neural networks to encode and decode reservoir models, allowing it to preserve geological realism and spatial relationships in the data. The latent space of the GWAE can be used to implicitly control geological realism (for example, through geodesic interpolation between latent points) and to analyze the variability of geological scenarios via techniques like PCA or t-SNE. 
 
 Workflow Summary:
@@ -28,7 +28,7 @@ Note: The dash-html-components and dash-core-components packages are listed beca
 
 
 ## es.ipynb 
-notebook Overview (Purpose, Methodology, and Outputs)
+The notebook Overview (Purpose, Methodology, and Outputs)
 Purpose: This notebook demonstrates an Assisted History Matching (AHM) under geological uncertainty using a Graph-based Variational Autoencoder (GVAE) and Evolution Strategies (ES) optimization. It is a companion to the paper "History Matching under Uncertainty of Geological Scenarios with Implicit Geological Realism Control with Generative Deep Learning and Graph Convolutions" by Shishaev et al., 2025 (https://arxiv.org/abs/2507.10201). The goal is to calibrate a geological model (specifically a channelized reservoir) to match production data while maintaining geological realism. In simpler terms, the notebook shows how to take an observed production history (from a true but unknown geology) and find a plausible geological scenario that reproduces that history. The uniqueness here is the use of a latent space of a deep generative model to represent geological scenarios, and guiding the search in that space rather than directly in high-dimensional model parameters. This approach constrains the search to geologically reasonable scenarios (the GVAE ensures any latent vector decoded is a realistic geology) and uses a learned geodesic latent metric to penalize unrealistic departures. 
 
 Methodology:
