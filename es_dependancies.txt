@@ -1,0 +1,18 @@
+Each of the above Python packages is needed to run this notebook. 
+Notably, torch_geometric (PyTorch Geometric) should be installed with the version compatible to PyTorch (which is implied by torch). 
+The custom modules (GVWAE, grid, data, etc.) are part of the project’s codebase and not installable via pip, so they are not listed here. 
+The listed requirements cover all external dependencies used in the notebook.
+
+
+pandas
+numpy
+tqdm
+matplotlib
+torch
+torchvision
+torch_geometric
+scipy
+scikit-learn
+joblib
+wandb
+

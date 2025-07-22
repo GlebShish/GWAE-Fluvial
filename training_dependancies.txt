@@ -1,0 +1,15 @@
+Below is a list of all major dependencies required to run this notebook. 
+These can be saved into a requirements.txt file for easy installation. 
+Ensure that the versions of PyTorch and PyTorch Geometric are compatible 
+(the combination should be chosen based on the system and CUDA availability):
+
+numpy
+matplotlib
+torch
+torch-geometric
+tqdm
+scikit-learn
+tensorboard       # for using TensorBoard with PyTorch (SummaryWriter)
+dash              # for visualization tools (if using interactive Dash plots)
+dash-html-components
+dash-core-components
