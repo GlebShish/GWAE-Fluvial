@@ -1,5 +1,9 @@
 # GWAE-Fluvial
 
+training.ipynb – Demonstrates training of a Graph-based Wasserstein Autoencoder (GWAE) to learn latent representations of geological models, enabling realistic reconstruction.
+
+es.ipynb – Implements Assisted History Matching using a pre-trained GWAE and Evolution Strategies to find geological models in latent space for production data calibration under geological uncertainty.
+
 ## training.ipynb 
 The notebook demonstrates the training process of a Graph-based Wasserstein Autoencoder (GWAE) for generating geological models under uncertainty. The GWAE is a graph-based variational autoencoder architecture designed to handle different geological scenarios (e.g., models with varying numbers of channels) by learning a low-dimensional latent space representation
 researchgate.net. Unlike traditional grid-based approaches, this model uses graph convolutional neural networks to encode and decode reservoir models, allowing it to preserve geological realism and spatial relationships in the data. The latent space of the GWAE can be used to implicitly control geological realism (for example, through geodesic interpolation between latent points) and to analyze the variability of geological scenarios via techniques like PCA or t-SNE. 
