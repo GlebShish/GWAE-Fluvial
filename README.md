@@ -1,6 +1,6 @@
 # GWAE-Fluvial
 
-training.ipynb – Demonstrates training of a Graph-based Wasserstein Autoencoder (GWAE) to learn latent representations of geological models, enabling realistic reconstruction.
+training.ipynb – Demonstrates training of a Graph-based Wasserstein Autoencoder (GWAE) to learn latent representations of geological models, enabling realistic reconstruction. https://cloud.hw.tpu.ru/index.php/s/9iyKN6nY4j3FEpc - link to the training dataset
 
 es.ipynb – Implements Assisted History Matching using a pre-trained GWAE and Evolution Strategies to find geological models in latent space for production data calibration under geological uncertainty.
 
